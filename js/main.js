@@ -38,6 +38,142 @@
 //     result.innerHTML = greetPeople(firstInp.value.trim().split(' '));
 // }
 
+// ? Task #3
+// ? Get the File Extension
+
+// function getExtension(arr) {
+//     let myArr = arr.map(elem => elem.split('.')[1])
+//     return myArr
+// }
+
+// let btn = document.querySelector('.btn');
+
+// btn.onclick = () => {
+//     let firstInp = document.querySelector('.inp1');
+//     let result = document.querySelector('.result');
+
+//     result.innerHTML = getExtension(firstInp.value.trim().split(' '));
+// }
+
+// ? Task #4
+// ? Sum of Numbers in an Array
+
+// function arraySum(nums) {
+//     let arr = nums.map(elem => elem % 2 === 0 ? elem ** 2 : Math.sqrt(elem))
+//     return Number((arr.reduce((accu, curr) => accu + curr, 0)).toFixed(2));
+// }
+
+// let myButton = document.querySelector(".btn");
+
+// myButton.onclick = () => {
+//     let myInp = document.querySelector(".inp1");
+//     let myResult = document.querySelector(".result");
+//     let myArr = myInp.value.trim().split(" ");
+
+//     myResult.innerHTML = arraySum(myArr);
+// }
+
+// ? Task #5
+// ? Extremely Over-Nested
+// todo How to get result properly in HTML?!
+
+// function deNest(arr) {
+//     return arr.flat(Infinity).pop();
+// }
+
+// let myButton = document.querySelector(".btn");
+
+// myButton.onclick = () => {
+//     let myInp = document.querySelector(".inp1");
+//     let myResult = document.querySelector(".result");
+//     let myArr = myInp.value.trim().split(" ");
+
+//     myResult.innerHTML = deNest(myArr);
+// }
+
+// ? Task #6
+// ? Cowboy Shootout
+
+// function rogerShots(arr) {
+//     let bangArr = arr.map(elem => elem === "Bang!" || elem === "BangBang!" ? 0.5 : 0);
+//     return bangArr.reduce((accu, curr) => accu + curr, 0)
+// }
+
+// let myButton = document.querySelector(".btn");
+
+// myButton.onclick = () => {
+//     let myInp = document.querySelector(".inp1");
+//     let myResult = document.querySelector(".result");
+//     let myArr = myInp.value.trim().split(" ");
+
+//     myResult.innerHTML = rogerShots(myArr);
+// }
+
+// ? Task #7
+// ? Convert Number to Corresponding Month Name
+
+// function monthName(num) {
+//     let arr = {
+//         1: "January",
+//         2: "February",
+//         3: "March",
+//         4: "April",
+//         5: "May",
+//         6: "June",
+//         7: "July",
+//         8: "August",
+//         9: "September",
+//         10: "October",
+//         11: "November",
+//         12: "December"
+//     }
+
+//     return arr[num]
+// }
+
+// let myButton = document.querySelector(".btn");
+
+// myButton.onclick = () => {
+//     let myInp = document.querySelector(".inp1");
+//     let myResult = document.querySelector(".result");
+
+//     myResult.innerHTML = monthName(myInp.value);
+// }
+
+// ? Task #8
+// ? CMS Selector Based on a Given String
+
+// function cmsSelector(arr, str) {
+//     let myArr = arr.filter(elem => elem.includes(str))
+//     return myArr.sort()
+// }
+
+// let myBtn = document.querySelector(".btn");
+
+// myBtn.onclick = () => {
+//     let firstInp = document.querySelector('.inp1');
+//     let secondInp = document.querySelector('.inp2');
+//     let myRes = document.querySelector('.result');
+
+//     myRes.innerHTML = cmsSelector(firstInp.value.trim().split(' '), secondInp.value);
+// }
+
+// ? Task #9
+// ? Unlucky 13
+
+// function unlucky13(nums) {
+//     let arr = nums.filter(elem => elem % 13 !== 0);
+//     return arr;
+// }
+
+// let myBtn = document.querySelector(".btn");
+
+// myBtn.onclick = () => {
+//     let myInp = document.querySelector('.inp');
+//     let myRes = document.querySelector('.result');
+
+//     myRes.innerHTML = unlucky13(myInp.value.trim().split(' '));
+// }
 
 // todo ----- EASY -----
 
@@ -172,4 +308,42 @@
 //     let result = document.querySelector('.result');
 
 //     result.innerHTML = firstVowel(firstInp.value);
+// }
+
+// ? Task #8
+// ? Transforming Words into Binary Strings
+
+// function convertBinary(str) {
+//     let a = /[a-m]/gi;
+//     let b = /[n-z]/gi;
+
+//     return str.replace(a, 0).replace(b, 1);
+// }
+
+// let btn = document.querySelector('.btn');
+
+// btn.onclick = () => {
+//     let firstInp = document.querySelector('.inp1');
+//     let result = document.querySelector('.result');
+
+//     result.innerHTML = convertBinary(firstInp.value);
+// }
+
+// ? Task #9
+// ? Most Left Digit
+
+// function leftDigit(num) {
+//     let a = /[0123456789]/gi;
+//     let arr = num.match(a);
+//     let myArr = arr.map(elem => Number(elem));
+//     return myArr[0]
+// }
+
+// let btn = document.querySelector('.btn');
+
+// btn.onclick = () => {
+//     let firstInp = document.querySelector('.inp1');
+//     let result = document.querySelector('.result');
+
+//     result.innerHTML = leftDigit(firstInp.value);
 // }
