@@ -175,6 +175,24 @@
 //     myRes.innerHTML = unlucky13(myInp.value.trim().split(' '));
 // }
 
+// ? Task #10
+// ? Fix the Error: Filtering out Empty Arrays
+// ! How to write empty array in HTML and get the result without empty !!!
+
+// // Fix this incorrect code so that all tests pass!
+// function removeEmptyArrays(arr) {
+//     return arr.flat()
+// }
+
+// let myBtn = document.querySelector(".btn");
+
+// myBtn.onclick = () => {
+//     let myInp = document.querySelector('.inp');
+//     let myRes = document.querySelector('.result');
+
+//     myRes.innerHTML = removeEmptyArrays(myInp.value.trim().split(' '));
+// }
+
 // todo ----- EASY -----
 
 // ? Task #1
